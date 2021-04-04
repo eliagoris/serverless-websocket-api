@@ -1,0 +1,29 @@
+org: eduardofidera
+app: mmo-api
+service: mmo-api
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: "20201221"
+
+functions:
+  websocket:
+    handler: handler.hello
+    events:
+      - websocket:
+          # Handles new connection requests
+          route: $connect
+
+      - websocket:
+          # Handles all unrouted messages
+          route: $default
+
+      - websocket:
+          # Handles disconnect messages
+          route: $disconnect
+
+plugins:
+  - serverless-offline
