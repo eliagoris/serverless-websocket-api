@@ -1,0 +1,45 @@
+Arguments: 
+  /home/edaegonis/.nvm/versions/node/v12.19.1/bin/node /home/edaegonis/.nvm/versions/node/v12.19.1/bin/yarn add @aws-sdk
+
+PATH: 
+  /home/edaegonis/.nvm/versions/node/v12.19.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/edaegonis/.dotnet/tools
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.19.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@aws-sdk: Request "https://registry.yarnpkg.com/@aws-sdk" returned a 405
+      at Request.params.callback [as _callback] (/home/edaegonis/.nvm/versions/node/v12.19.1/lib/node_modules/yarn/lib/cli.js:66997:18)
+      at Request.self.callback (/home/edaegonis/.nvm/versions/node/v12.19.1/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (/home/edaegonis/.nvm/versions/node/v12.19.1/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (/home/edaegonis/.nvm/versions/node/v12.19.1/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1223:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "serverless-websocket-api",
+    "description": "",
+    "version": "0.1.0",
+    "dependencies": {},
+    "devDependencies": {
+      "serverless": "^2.33.1",
+      "serverless-offline": "^6.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

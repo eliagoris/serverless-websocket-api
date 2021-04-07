@@ -2,7 +2,9 @@
   "name": "serverless-websocket-api",
   "description": "",
   "version": "0.1.0",
-  "dependencies": {},
+  "dependencies": {
+    "@aws-sdk/client-apigatewaymanagementapi": "^3.11.0"
+  },
   "devDependencies": {
     "serverless": "^2.33.1",
     "serverless-offline": "^6.9.0"
